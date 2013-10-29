@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<title>Webcam QR Test</title>
+<link href="css/ui-lightness/jquery-ui-1.9.2.custom.css" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/demos.css" type="text/css" media="screen" />
+<script src="js/jquery-1.10.2.min.js"></script>
+<script>
+	jQuery(document).bind("mobileinit", function() {
+	jQuery.mobile.defaultPageTransition = null;
+});
+</script>
+
+
+<script type="text/javascript" src="js/jsapi.js"></script>
+<!-- <script type="text/javascript" src="https://www.google.com/jsapi"></script> -->
+<link rel="stylesheet" href="css/mystyle.css" type="text/css" />
+<link rel="stylesheet" href="css/switch_button.css" type="text/css" />
+
+<script src="js/jqm/jquery.mobile-1.1.0-rc.1.min.js"></script>
+<script src="js/jquery.json-2.3.min.js"></script>
+<script src="js/jstorage.min.js"></script>
+<script src="js/jqm.page.params.js"></script>
+<script src="js/jquery-ui-1.9.2.custom.min.js"></script>
+<script src="js/RGraph/libraries/RGraph.common.core.js" ></script>
+<script src="js/RGraph/libraries/RGraph.line.js" ></script>
+<script src="js/RGraph/libraries/RGraph.common.dynamic.js" ></script>
+<script src="js/RGraph/libraries/RGraph.common.tooltips.js" ></script>
+<script src="js/RGraph/libraries/RGraph.common.effects.js" ></script>
+<script src="js/RGraph/libraries/RGraph.gauge.js" ></script>
+<script src="js/RGraph/libraries/RGraph.thermometer.js" ></script>
+
+
+<script type="text/javascript" src="js/qr-code-lib/grid.js"></script>
+<script type="text/javascript" src="js/qr-code-lib/version.js"></script>
+<script type="text/javascript" src="js/qr-code-lib/detector.js"></script>
+<script type="text/javascript" src="js/qr-code-lib/formatinf.js"></script>
+<script type="text/javascript" src="js/qr-code-lib/errorlevel.js"></script>
+<script type="text/javascript" src="js/qr-code-lib/bitmat.js"></script>
+<script type="text/javascript" src="js/qr-code-lib/datablock.js"></script>
+<script type="text/javascript" src="js/qr-code-lib/bmparser.js"></script>
+<script type="text/javascript" src="js/qr-code-lib/datamask.js"></script>
+<script type="text/javascript" src="js/qr-code-lib/rsdecoder.js"></script>
+<script type="text/javascript" src="js/qr-code-lib/gf256poly.js"></script>
+<script type="text/javascript" src="js/qr-code-lib/gf256.js"></script>
+<script type="text/javascript" src="js/qr-code-lib/decoder.js"></script>
+<script type="text/javascript" src="js/qr-code-lib/QRCode.js"></script>
+<script type="text/javascript" src="js/qr-code-lib/findpat.js"></script>
+<script type="text/javascript" src="js/qr-code-lib/alignpat.js"></script>
+<script type="text/javascript" src="js/qr-code-lib/databr.js"></script>
+
+
+<link rel="stylesheet" href="assets/css/styles.css" />
+<link rel="stylesheet" href="assets/knobKnob/knobKnob.css" />
+<script src="assets/knobKnob/transform.js"></script>
+<script src="assets/knobKnob/knobKnob.jquery.js"></script>
+<script src="assets/js/script.js"></script>
+<script type="text/javascript" src="js/corechart.js"></script>
+<script type="text/javascript" src="js/graphics.js"></script>
+<script type="text/javascript" src="js/ActuatorComponent.js"></script>
+
+<script src="/webinos.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+</head>
+<body>
+
+<video id="monitor" autoplay width="800" ></video>
+
+<div id="overlay" style="display:none">
+	<p id="serviceName"></p>
+	<p id="serviceDescription"></p>
+	<button class="trasparent-button"id="sensorButton" onclick="listenSensor()" style="display: none"></button>
+	<div id="valueDiv" style="display:none">
+		<p><b>Value</b><br/><span id="values"></span>
+		</p>
+	</div>
+
+	<div id="content_chart"></div>
+
+	<div id="content_actuator"></div>
+
+</div>
+<button class="trasparent-button" id="capture" style="display: none">Capture</button>
+<canvas id="photo" width="640px" height="480px" style="display: none"></canvas>
+
+ 
+</body>
+</html>

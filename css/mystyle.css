@@ -1,0 +1,106 @@
+.trasparent-button{
+	background: rgb(255, 255, 255);
+	background: rgba(255, 255, 255, 0.7);
+	border:0px;
+}
+#capture{
+	width:100px;
+	height:30px;
+	position:absolute;
+	left:350px;
+	top:530px;
+}
+
+#overlay{
+	position:absolute;
+	width: 800px;
+	height:600px;
+	left:0px;
+	top:0px;
+	background: rgba(255, 255, 255, 0.3);
+}
+#monitor{
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+#serviceName{
+	font-weight:bold;
+}
+#serviceDescription{
+	font-size: small;
+}
+#sensorButton{
+	position:absolute;
+	width:100px;
+	height:50px;
+	left:500px;
+	top:20px;
+}
+#valueDiv{
+	position:absolute;
+	left:610px;
+	top:10px;
+}
+#values{
+	font-size: small;
+}
+#actuatorSlider{
+	
+}
+#sensor-chart{
+	background: rgba(255, 255, 255, 0.1);
+	position:absolute;
+	top:200px;
+	left:50px;
+	height:300px;
+	width:700px;
+}
+#photo{
+	position: absolute;
+	left: 0px;
+	top: 680px;
+	
+}
+#actuatorSlider{
+	width: 400px;
+}
+
+
+.thermometer_style{
+	position:absolute;
+	left:200px;
+	margin-top:50px;
+}
+
+.lineChart_style{
+	height:400px;
+	width:600px;
+	left:100px;
+	margin-top:80px;
+}
+
+.switch_style{
+	left:300px;
+	margin-top:260px;
+}
+
+#speed{
+    width: 330px;
+    margin-left:260px;
+	margin-top:260px;
+}
+
+.textbox {
+	background-color : #F7F778;
+	border: 1px solid #848484;
+	height:25px;
+	width: 275px;
+	outline:0;
+	margin: 5px;
+}
+
+.inputBox_style{
+	margin-left:260px;
+	margin-top:260px;
+}
